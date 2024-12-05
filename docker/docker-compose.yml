@@ -1,0 +1,19 @@
+version: "2"
+services:
+  jupyterlab:
+    deploy:
+        resources:
+            reservations:
+                devices:
+                    - capabilities: [gpu]
+    environment: 
+        - NVIDIA_VISIBLE_DEVICES=all
+        - NVIDIA_DRIVER_CAPABILITIES=all
+    build:
+      context: .
+    user: root
+    ports:
+      - "8888:8888"
+      - "6006:6006"
+    volumes:
+      - "../../santa2024:/home/jovyan/work"
