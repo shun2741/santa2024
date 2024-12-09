@@ -17,3 +17,4 @@ services:
       - "6006:6006"
     volumes:
       - "../../santa2024:/home/jovyan/work"
+    command: jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root
