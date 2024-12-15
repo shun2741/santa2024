@@ -31,32 +31,32 @@ def main():
     
 
     # 設定    
-    # BATCH_SIZE = 64
+    BATCH_SIZE = 64
 
-    # best_score = 1e6
-    # best_text = ""
+    best_score = 1e6
+    best_text = ""
 
-    # # 全ての計算を全探索する
-    # perms = []
-    # for i, p in enumerate(all_permutations):
-    #     # スペース区切りの文字列に変換
-    #     perms.append(" ".join(p))
+    # 全ての計算を全探索する
+    perms = []
+    for i, p in enumerate(all_permutations):
+        # スペース区切りの文字列に変換
+        perms.append(" ".join(p))
         
-    #     # バッチサイズ分まとめて計算
-    #     if (len(perms)==BATCH_SIZE) | (i==PERM_CT-1): 
-    #         # スコア計算して更新したら記録
-    #         p = scorer.get_perplexity(perms, batch_size=BATCH_SIZE)
-    #         if np.min(p) < best_score:
-    #             best_score = np.min(p)
-    #             best_text = perms[ np.argmin(p) ]
-    #             print( f"New best = {best_score} with '{best_text}'" )
-    #         perms = []
-    #     # 進捗表示
-    #     if i%10_000==0: 
-    #         print(f"Completed computing {i} perplexities.")
-    #     if best_score < 475: 
-    #         print("Stopping early because we found optimal!")
-    #         break
+        # バッチサイズ分まとめて計算
+        if (len(perms)==BATCH_SIZE) | (i==PERM_CT-1): 
+            # スコア計算して更新したら記録
+            p = scorer.get_perplexity(perms, batch_size=BATCH_SIZE)
+            if np.min(p) < best_score:
+                best_score = np.min(p)
+                best_text = perms[ np.argmin(p) ]
+                print( f"New best = {best_score} with '{best_text}'" )
+            perms = []
+        # 進捗表示
+        if i%10_000==0: 
+            print(f"Completed computing {i} perplexities.")
+        if best_score < 475: 
+            print("Stopping early because we found optimal!")
+            break
 
     print("Done.")
 
