@@ -7,6 +7,7 @@ RUN pip install numpy
 RUN pip install pandas
 RUN pip install transformers
 RUN pip install torch
+RUN pip install matplotlib
 RUN pip install accelerate>=0.26.0
 RUN pip install jupyterlab==3.4.6
 
