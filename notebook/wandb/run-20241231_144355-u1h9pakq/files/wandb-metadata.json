@@ -1,0 +1,39 @@
+{
+  "os":  "Linux-5.15.0-73-generic-x86_64-with-glibc2.36",
+  "python":  "CPython 3.12.8",
+  "startedAt":  "2024-12-31T14:43:55.150375Z",
+  "program":  "ex_014-jvsc-8dcd0f62-5ea1-41d6-aa83-81c4b7da3f45303f045e-6f5d-42e0-9eb4-1de1bef20a90.ipynb",
+  "git":  {
+    "remote":  "https://github.com/shun2741/santa2024.git"
+  },
+  "email":  "shun_pass_0721@yahoo.co.jp",
+  "root":  "/home/jovyan/work/notebook",
+  "host":  "3edec84e9d4d",
+  "executable":  "/usr/local/bin/python3.12",
+  "cpu_count":  8,
+  "cpu_count_logical":  16,
+  "gpu":  "NVIDIA GeForce RTX 3060",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "1006450962432",
+      "used":  "775731728384"
+    }
+  },
+  "memory":  {
+    "total":  "33583828992"
+  },
+  "cpu":  {
+    "count":  8,
+    "countLogical":  16
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA GeForce RTX 3060",
+      "memoryTotal":  "12884901888",
+      "cudaCores":  3584,
+      "architecture":  "Ampere"
+    }
+  ],
+  "cudaVersion":  "12.4"
+}

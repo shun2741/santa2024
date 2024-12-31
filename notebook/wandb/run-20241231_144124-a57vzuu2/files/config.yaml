@@ -1,0 +1,58 @@
+_wandb:
+    value:
+        cli_version: 0.19.1
+        m: []
+        python_version: 3.12.8
+        t:
+            "1":
+                - 55
+            "2":
+                - 1
+                - 11
+                - 49
+                - 55
+                - 71
+            "3":
+                - 16
+                - 23
+                - 55
+            "4": 3.12.8
+            "5": 0.19.1
+            "8":
+                - 1
+                - 5
+            "12": 0.19.1
+            "13": linux-x86_64
+base_ex_num:
+    value: "014"
+batch_size:
+    value: 8
+cooling_rate:
+    value: 0.9
+cooling_span:
+    value: 10
+end_temperature:
+    value: 10
+iteration:
+    value: 1000
+neighbor_types:
+    value:
+        - swap
+        - insert
+        - segment_insert
+path:
+    value: ../model
+qid:
+    value: 0
+restart:
+    value: false
+restart_file_path:
+    value: ../model/out/current_texts_014_0.csv
+save_interval:
+    value: 10
+seed:
+    value: 42
+split_rule:
+    value: default
+start_temperature:
+    value: 40

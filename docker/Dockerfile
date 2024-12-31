@@ -10,6 +10,7 @@ RUN pip install torch
 RUN pip install matplotlib
 RUN pip install accelerate>=0.26.0
 RUN pip install jupyterlab==3.4.6
+RUN pip install wandb
 
 RUN pip install ipywidgets --upgrade
 RUN pip install jupyter --upgrade
