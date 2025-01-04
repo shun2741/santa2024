@@ -1,0 +1,66 @@
+_wandb:
+    value:
+        cli_version: 0.19.1
+        m: []
+        python_version: 3.12.8
+        t:
+            "1":
+                - 55
+            "2":
+                - 1
+                - 11
+                - 49
+                - 55
+                - 71
+            "3":
+                - 16
+                - 23
+                - 24
+                - 55
+            "4": 3.12.8
+            "5": 0.19.1
+            "8":
+                - 1
+                - 5
+            "12": 0.19.1
+            "13": linux-x86_64
+base_ex_num:
+    value: "015"
+batch_size:
+    value: 32
+cooling_rate:
+    value: 0.999
+cooling_span:
+    value: 10
+end_temperature:
+    value: 0.001
+iteration:
+    value: 100
+neighbor_types:
+    value:
+        - swap
+        - insert
+        - segment_insert
+        - scramble
+path:
+    value: ../model
+prefix_lock:
+    value: 16
+qid:
+    value: 4
+restart:
+    value: true
+restart_file_path:
+    value: ../../output/out/id4_best_67_5.csv.csv
+restart_shuffle:
+    value: true
+save_interval:
+    value: 10
+seed:
+    value: 42
+split_rule:
+    value: default
+start_temperature:
+    value: 100
+suffix_lock:
+    value: 10
